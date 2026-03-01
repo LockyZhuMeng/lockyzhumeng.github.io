@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+<html lang="zh-CN"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="/lockyzhumeng.github.io/echarts.js"></script>
+    <title>Locky筑梦的个人网页</title>
+    <style>
+      body {
+        margin: 0;
+      }
+      a{
+        text-decoration:none;
+      }
+      a:hover{
+        text-decoration:underline;
+      }
+      .chart-container {
+        width: 80%;
+        max-width: 700px;
+        background: #fff;
+        padding: 25px;
+        border-radius: 8px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      }
+      .container{
+        width:100%;
+        height:auto;
+      }
+      #echart{
+        min-height:600px;
+      }
+      input{
+        background-color:#000;
+        color:#fff;
+      }
+      button{
+        background-color:#000;
+        color:#fff;
+      }
+      button:hover{
+        text-decoration:underline;
+      }
+      .private-content1 {
+        display: none;
+      }
+      .private-content2 {
+        display: none;
+      }
+      .private-content3 {
+        display: none;
+      }
+    </style>
+  <style>.ours-select{position:relative}.ours-select .selection-item
+
+{display:block;cursor:pointer;width:100%;height:36px;line-height:36px;box-sizing:border-box;padding:0 32px 0 
+
+10px;position:relative}.ours-select .selection-item .arrow-svg{position:absolute;display:inline-
+
+block;width:14px;height:14px;top:50%;transform:translateY(-50%);right:10px}.ours-select .selection-item 
+
+.arrow-svg path{transition:all .3s}.ours-select .selection-item .arrow-fold::before
+
+{right:50%;top:75%;transform:rotate(45deg)}.ours-select .selection-item .arrow-fold::after
+
+{left:50%;top:75%;transform:rotate(-45deg)}.ours-select .selection-item .arrow-unfold::before
+
+{right:50%;top:25%;transform:rotate(-45deg)}.ours-select .selection-item .arrow-unfold::after
+
+{left:50%;top:25%;transform:rotate(45deg)}.ours-select .selector{top:0;position:absolute;border-
+
+radius:6px;overflow:hidden;width:100%;background:#f7f7f7}.ours-select .selector:focus{outline:none}.ours-select 
+
+.selector.z-index{z-index:9999999999999;box-shadow:0px 6px 10px 0px rgba(0,0,0,.14)}.ours-select .selector 
+
+.select-dropdown{transition:all .2s}.ours-select .selector .select-dropdown.unfold{max-height:252px;overflow-
+
+y:auto;z-index:9999999}.ours-select .selector .select-dropdown.fold{max-height:0px;overflow-y:hidden}.ours-
+
+select .option-wrapper{cursor:pointer;width:100%;height:36px;line-height:36px;box-sizing:border-box;padding:0 
+
+32px 0 10px}.ours-select .option-wrapper:hover{background:#fff}.ours-select .seleted
+
+{background:#e6f4ff}.ours-select .option{white-space:nowrap;overflow:hidden;text-overflow:ellipsis;user-
+
+select:none}</style></head>
+  <body style="background-color:#111;">
+    <header style="
+    align-items: center;
+    background-color:#000;
+    padding:15px;
+    font-size:15px;
+    color:#fff;
+    ">
+      <img src="https://i.imgs.ovh/2026/01/02/CiWEVL.png" alt="QL" width="100px" height="100px">
+      <h2 style="
+      text-align:left;
+      position:absolute;
+      top:30px;
+      left:120px;
+      ">曲率QL的个人网页</h2>
+      <nav style="
+      text-align:right;
+      font-size:25px;
+      position:absolute;
+      top:-10px;
+      right:15px;
+      ">
+        <p><strong>v3.2<br>第1版<br>264 Line</strong></p>
+      </nav>
+    </header>
+      <main>
+        <section class="Main" style="
+        background-color:#000;
+        margin:30px;
+        text-align:center;
+        padding:15px;
+        color:#fff;
+        font-size:20px;
+        border-radius:15px;
+        ">
+          <h1 style="
+          background-color:#000;
+          margin:30px;
+          text-align:center;
+          color:#fff;
+          font-size:40px;
+          ">主页</h1>
+          <h2><strong>关于我</strong></h2>
+          <h3><strong>个人简介</strong></h3>
+          <p>术力口厨 | 二次元 | 我的世界7年老玩家 | SCP | 某科学的超电磁炮<br></p>
+          <h3><strong>联系方式</strong></h3>
+          <p>QQ号：3803412851</p>
+          <p></p>
+        </section>
+        <section class="Link" style="
+        background-color:#000;
+        margin:30px;
+        text-align:center;
+        padding:15px;
+        color:#fff;
+        font-size:20px;
+        border-radius:15px;
+        ">
+          <h2><strong>其他</strong></h2>
+          <br><a style="
+          background-color:#000000;
+          margin:30px；
+          text-align:center;
+          color:#ffffff;
+          font-size:20px;" href="https://userql114514.github.io/ql114514.github.io">神秘网页</a>
+          <p></p>
+        </section>
+        <section class="Tips" style="
+        background-color:#000;
+        margin:30px;
+        text-align:center;
+        padding:15px;
+        color:#fff;
+        font-size:20px;
+        border-radius:15px;
+        ">
+          <h2>心理委员温馨提示</h2>
+          <p>1.不准从28楼肘击水泥地<br>
+          2.不可以去天台看看自己有没有隐形的翅膀<br>
+          3.脖子不能跟房梁来场酣畅淋漓的拔河比赛<br>
+          4.请不要用手腕跟刀片比硬度<br>
+          5.也不要去野湖练习憋气<br>
+          6.不能躲在国道旁等大货车出来的时候吓他一跳<br>
+          7.禁止和高铁比谁力气大<br>
+          8.拒绝喝确保庄稼正常生长的小饮料<br>
+          9.不要去和鱼比肺活量<br>
+          10.禁止cos晴天娃娃<br>
+          11.禁止在煮饭过程中点燃室内<br>
+          <strong>12.以上不是任务清单</strong></p>
+        </section>
+        <section class="Update" style="
+        background-color:#000;
+        margin:30px;
+        text-align:center;
+        padding:15px;
+        color:#fff;
+        font-size:20px;
+        border-radius:15px;
+        ">
+        <h1 style="
+        background-color:#000;
+        margin:30px;
+        text-align:center;
+        color:#fff;
+        font-size:40px;
+        ">更新日志</h1>
+          <h3>1.0</h3>
+          <p>2025.12.29<br>初版<br>8.88KB</p>
+        </section>
+        <section class="Chart" style="
+        background-color:#000;
+        margin:30px;
+        text-align:center;
+        padding:15px;
+        color:#fff;
+        font-size:20px;
+        border-radius:15px;
+        ">
+          <div id="main" style="width: 80%; height: 400px; margin: 0px auto; user-select: none; -webkit-tap-
+
+highlight-color: rgba(0, 0, 0, 0); position: relative;" _echarts_instance_="ec_1772350283342"><div 
+
+style="position: relative; width: 96px; height: 400px; padding: 0px; margin: 0px; border-width: 0px;"><canvas 
+
+data-zr-dom-id="zr_0" width="96" height="400" style="position: absolute; left: 0px; top: 0px; width: 96px; 
+
+height: 400px; user-select: none; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); padding: 0px; margin: 0px; 
+
+border-width: 0px;"></canvas></div><div class=""></div></div>
+          <script type="text/javascript">
+            document.addEventListener('DOMContentLoaded', function() {
+              var chartDom = document.getElementById('main');
+              var myChart = echarts.init(chartDom);
+              var option = {
+                title: {
+                  textStyle: { color: '#fff', fontSize: 24 }
+                },
+                tooltip: {
+                  trigger: 'axis',
+                  textStyle: { color: '#000' }
+                },
+                xAxis: {
+                  type: 'category',
+                  data: ["1.0"],
+                  axisLabel: { color: '#fff', fontSize: 14 },
+                  axisLine: { lineStyle: { color: '#fff' } },
+                  splitLine: { lineStyle: { color: 'rgba(255,255,255,0.1)' } }
+                },
+                yAxis: {
+                  type: 'value',
+                  name: 'Size (KB)',
+                  nameTextStyle: { color: '#fff' },
+                  axisLabel: { color: '#fff', fontSize: 14 },
+                  axisLine: { lineStyle: { color: '#fff' } },
+                  splitLine: { lineStyle: { color: 'rgba(255,255,255,0.1)' } }
+                },
+                series: [
+                  {
+                    name: '文件大小',
+                    data: [8.88],
+                    type: 'line',
+                    smooth: true,
+                    lineStyle: { color: '#fff', width: 1 },
+                    itemStyle: { color: '#fff' },
+                  }
+                ],
+                backgroundColor: 'transparent'
+              };
+              myChart.setOption(option);
+              window.addEventListener('resize', function() {
+                myChart.resize();
+              });
+            });
+          </script>
+        </section>
+    <footer style="
+    text-align:center;
+    align-items: center;
+    background-color:#000;
+    padding:15px;
+    font-size:20px;
+    color:#fff;">
+      <p>by Locky筑梦</p>
+    </footer></body></html>
